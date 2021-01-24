@@ -1,0 +1,20 @@
+<div class="card-img-container">
+  <img src="{{inputObj.image}}" alt="{{inputObj.name}}">
+</div>
+<article>
+  <header>
+    <h4>{{inputObj.name}}</h4>
+    <span>{{inputObj.gender}}, {{inputObj.status}} - {{inputObj.species}} {{inputObj.type ? ' - ' + inputObj.type : ''}}</span>
+  </header>
+  <section>
+    <h6>LOCATION</h6>
+    <span>{{inputObj.locationName}}
+      {{inputObj.locationType ? ' - Type: ' + inputObj.locationType : ''}}
+      {{inputObj.locationDimension ? ' - Dimension: ' + inputObj.locationDimension : ''}}
+      {{inputObj.locationResidents.length ? ' - Residents: ' + inputObj.locationResidents.length : ''}}</span>
+  </section>
+  <footer>
+    <span>EPISODES APPEARANCE: </span>
+    <span>{{inputObj.episodes.length}}</span>
+  </footer>
+</article>

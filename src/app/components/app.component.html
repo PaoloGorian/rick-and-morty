@@ -1,0 +1,12 @@
+<header>
+  <h1>Rick & Morty Cards</h1>
+</header>
+<main>
+  <section>
+    <div *ngIf="!cards.length" class="spinner-border text-light pb-1" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <app-profile-card *ngFor="let card of cards" [inputObj]="card"></app-profile-card>
+  </section>
+</main>
+<footer></footer>
